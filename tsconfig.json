@@ -9,9 +9,9 @@
 
     /* Aliases */
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@theme/*": ["src/theme/*"]
+      "@components/*": ["lib/components/*"],
+      "@pages/*": ["lib/pages/*"],
+      "@theme/*": ["lib/theme/*"]
     },
     "outDir": "dist",
 
@@ -29,7 +29,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["lib", "typings.d.ts"],
   "tsc-alias": {
     "resolveFullPaths": true
   },

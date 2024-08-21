@@ -10,23 +10,11 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:mdx/recommended',
     'plugin:storybook/recommended',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  overrides: [
-    {
-      files: '*.mdx',
-      parser: 'eslint-mdx',
-      extends: ['plugin:mdx/recommended', 'plugin:mdx/overrides'],
-      rules: {
-        indent: 'off',
-        semi: 'off',
-      },
-    },
-  ],
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
     'linebreak-style': ['error', 'unix'],
